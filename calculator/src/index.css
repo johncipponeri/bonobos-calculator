@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Avenir Next';
+  src: local('AvenirNextLTPro-Regular'), url(./fonts/AvenirNextLTPro-Regular.otf) format('opentype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Avenir Next';
+  font-style: normal;
+  font-weight: 700;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.calculator {
+  background-color: rgb(241, 250, 248);
+  border: 1px solid black;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.equationInputContainer {
+  background-color: #FFF;
+  border: 1px solid black;
+  padding: 12px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.currentEquationInput {
+  font-size: 48px;
+}
+
+.buttonsGridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  grid-auto-rows: minmax(70px, 70px);
+}
+
+.gridButton {
+  border: 1px solid #000;
+  padding: 18px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.gridButton:hover {
+  filter: brightness(85%);
+  transition: all 0.5s ease;
+}
+
+.gridButtonInput {
+  background-color: #FFF;
+}
+.gridButtonOperation {
+  background-color: rgb(239, 255, 252);
+}
